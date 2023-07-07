@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Add 2 numbers</title>
+        <script>
+            function add()
+            {
+                var x= document.getElementById("x").value
+                var y= document.getElementById("y").value
+                var result= Number(x)+Number(y)
+                document.getElementById("result").value=result
+            }
+            function sub()
+            {
+                var x= document.getElementById("x").value
+                var y= document.getElementById("y").value
+                var result= Number(x)-Number(y)
+                document.getElementById("result").value=result
+
+            }
+            function mul()
+            {
+                var x= document.getElementById("x").value
+                var y= document.getElementById("y").value
+                var result= Number(x)*Number(y)
+                document.getElementById("result").value=result
+
+            }
+            function div()
+            {
+                var x= document.getElementById("x").value
+                var y= document.getElementById("y").value
+                var result= Number(x)/Number(y)
+                document.getElementById("result").value=result
+
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td>X=</td>
+                    <td><input type="text" id="x"></td>
+                </tr>
+                <tr>
+                    <td>Y=</td>
+                    <td><input type="text" id="y"></td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td><input type="text" id="result" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Add" onclick="add()"></td>
+                    <td><input type="button" value="Sub" onclick="sub()"></td>
+                    <td><input type="button" value="Mul" onclick="mul()"></td>
+                    <td><input type="button" value="Divide" onclick="div()"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
